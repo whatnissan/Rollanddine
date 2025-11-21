@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll & Dine - Let Fate Decide Where You Eat!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 80px;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .tagline {
+            font-size: 22px;
+            opacity: 0.95;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .app-preview {
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .features {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .feature:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            font-size: 28px;
+            margin-right: 15px;
+            width: 40px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #764ba2;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .section p, .section a {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .section a {
+            color: white;
+        }
+        
+        .privacy-content {
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .privacy-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .privacy-content li {
+            margin: 8px 0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="logo">🎲</div>
+        <h1>Roll & Dine</h1>
+        <p class="tagline">Can't decide where to eat? Let fate decide!</p>
+        
+        <!-- Features Section -->
+        <div class="app-preview">
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">📍</span>
+                    <span>Find real restaurants near you</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🍕</span>
+                    <span>Filter by cuisine type</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🍳</span>
+                    <span>Breakfast mode for morning cravings</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🎰</span>
+                    <span>Roll the dice for a random pick</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🗺️</span>
+                    <span>Get directions instantly</span>
+                </div>
+            </div>
+            
+            <!-- Download Button -->
+            <a href="https://testflight.apple.com/join/YOURCODE" class="download-btn">
+                📱 Download on TestFlight
+            </a>
+        </div>
+        
+        <!-- Support Section -->
+        <div class="section">
+            <h2>💬 Need Help?</h2>
+            <p>Contact us at: <a href="mailto:your@email.com">your@email.com</a></p>
+        </div>
+        
+        <!-- Privacy Policy Section -->
+        <div class="section">
+            <h2>🔒 Privacy Policy</h2>
+            <div class="privacy-content">
+                <p>Roll & Dine respects your privacy.</p>
+                <ul>
+                    <li><strong>Location Data:</strong> We use your location only to find nearby restaurants. Your location is never stored or shared.</li>
+                    <li><strong>No Account Required:</strong> We don't collect personal information.</li>
+                    <li><strong>No Tracking:</strong> We don't use analytics or track your behavior.</li>
+                    <li><strong>Third Party Data:</strong> Restaurant information comes from Apple Maps.</li>
+                </ul>
+                <p>Last updated: November 2025</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Roll & Dine. Made with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>
